@@ -33,8 +33,8 @@ function runtimer(){
       else{
          clearInterval("stopinterval");
          document.querySelector("#p-bottom").innerHTML = " ";
-         document.querySelector("#resscore").innerHTML = score;
-         document.querySelector("#totalhit").innerHTML = score/10;
+         document.querySelector("#resscore").innerHTML ="Score:" + score;
+         document.querySelector("#totalhit").innerHTML = "Total Hit:" + score/10;
          document.querySelector("#card").style.display = "block"
       }
       
