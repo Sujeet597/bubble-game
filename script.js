@@ -14,7 +14,7 @@ function getNewhit(){
 function bubble(){
    var clutter = "";
 
-for(let i = 1; i<=240; i++){
+for(let i = 1; i<=136; i++){
    var num = Math.floor(Math.random()*10);
    clutter += `<div class="bubble">${num}</div>`;
    
@@ -33,8 +33,8 @@ function runtimer(){
       else{
          clearInterval("stopinterval");
          document.querySelector("#p-bottom").innerHTML = " ";
-         document.querySelector("#resscore").innerHTML ="Score:" + score;
-         document.querySelector("#totalhit").innerHTML = "Total Hit:" + score/10;
+         document.querySelector("#resscore").innerHTML ="Score: " + score;
+         document.querySelector("#totalhit").innerHTML = "Total Hit: " + score/10;
          document.querySelector("#card").style.display = "block"
       }
       
